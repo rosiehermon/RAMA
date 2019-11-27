@@ -5,7 +5,7 @@ body{
     background: url(bg.jpg);
     background-attachment: fixed;
     background-position: center;
-    background-color: blanchedalmond;
+    background-color: Gainsboro;
 }
 
 header{
@@ -13,13 +13,13 @@ header{
     top: 0;
     left: 0;
     padding: 0 20px;
-    background-color: rgb(4, 148, 62);
+    background-color: black;
     width: 100%;
     box-sizing: border-box;
 }
 header .logo
 {
-    color: blanchedalmond;
+    color: white;
     height: 70px;
     line-height: 90px;
     font-size: 24px;
@@ -35,7 +35,7 @@ header nav
     float: right;
 }
 header nav ul
-{ 
+{
     margin: 0;
     padding: 0;
     font-size: 22px;
@@ -50,19 +50,19 @@ header nav ul li a
     height: 70px;
     line-height: 70px;
     padding: 0 20px;
-    color: blanchedalmond;
+    color: white;
     text-decoration: none;
     display: block;
 }
 header nav ul li a:hover,
 header nav ul li a.active
 {
-    color: blanchedalmond;
-    background: rgb(22, 179, 90);
+    color: white;
+    background: Gainsboro;
 }
 .menu-toggle
 {
-    color: blanchedalmond;
+    color: white;
     float: right;
     line-height: 70px;
     font-size: 22px;
@@ -84,7 +84,7 @@ header nav ul li a.active
         position: absolute;
         width: 100%;
         height: calc(100vh - 70px);
-        background: rgb(4, 148, 62);
+        background: black;
         top: 70px;
         left: -100%;
         transition: 0.5s;
@@ -107,16 +107,16 @@ header nav ul li a.active
 
 .main-body{
     color: rgb(51, 55, 52);
-    background-color: rgba(255, 240, 202, 0.468) ;
+    background-color: Gainsboro;
     padding: 10px ;
 }
 
 h1{
-    color: rgb(22, 179, 90);
+    color: black;
     font-weight: bolder;
     font-size: 50px;
     padding-bottom: 10px;
-    
+
 }
 h5{
     font-family: 'Open Sans', sans-serif;
