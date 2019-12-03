@@ -4,55 +4,443 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <title>The Bermondsey Beer Mile</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<title>About</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="logo"><i class="fa fa-beer fa-2x" aria-hidden="true"></i><i class="fa fa-road fa-2x"
-                aria-hidden="true"></i></div>
-        <nav class="active">
-            <ul>
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Venues</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
-                $('nav').toggleClass('active')
-            })
-        })
-    </script>
+	<nav class="navbar navbar-expand-sm navbar-dark">
+		<a href="intro.html" class="navbar-brand"><i class="fa fa-beer fa-5x" aria-hidden="true"></i><i class="fa fa-road fa-5x"
+				aria-hidden="true"></i></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+			<span class="navbar-taggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="intro.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="venues.html" class="nav-link">Venues</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <div class="main-body">
-        <h1>Venues</h1>
-        <h5>A list of venues, contact details and opening times.</h5>
-        <div class="row">
-            <div class="col-sm-4">Images</div>
-            <div class="col-sm-4">Description</div>
-            <div class="col-sm-4">Contact Info</div>
-        </div>
+    <div class="page-header">
+		<h1>Venues</h1>
+		<br>
+		<h5>On a Saturday all the taprooms are open by 12pm. They start to close from 6pm onwards, although most stay open until at least 8pm and some stay open until 11pm. Check individual Taproom times for Saturday and other opening times and addresses.</h5>
+	</div>
+
+
+    <body>
+
+    <section class="cd-horizontal-timeline">
+    	<div class="timeline">
+    		<div class="events-wrapper">
+    			<div class="events">
+    				<ul>
+    					<li><a id="dot-01" href="#0" data-date="2000/01/01" class="selected">Southwark Brewing</a></li>
+    					<li><a id="dot-02" href="#0" data-date="2001/01/01">The Barrel Project</a></li>
+    					<li><a id="dot-03" href="#0" data-date="2002/01/01">Hawkes Cider</a></li>
+    					<li><a id="dot-04" href="#0" data-date="2003/01/01">Hiver/All Good Beer</a></li>
+    					<li><a id="dot-05" href="#0" data-date="2004/01/01">Anspach & Hobday</a></li>
+    					<li><a id="dot-06" href="#0" data-date="2005/01/01">Moor Beer</a></li>
+    					<li><a id="dot-07" href="#0" data-date="2006/01/01">London Calling Sweden</a></li>
+    					<li><a id="dot-08" href="#0" data-date="2007/01/01">Cloudwater</a></li>
+    					<li><a id="dot-09" href="#0" data-date="2008/01/01">Brew By Numbers</a></li>
+    					<li><a id="dot-10" href="#0" data-date="2009/01/01">Bianca Road</a></li>
+    					<li><a id="dot-11" href="#0" data-date="2010/01/01">uBrew</a></li>
+    					<li><a id="dot-12" href="#0" data-date="2011/01/01">Affinity</a></li>
+    					<li><a id="dot-13" href="#0" data-date="2012/01/01">Spartan</a></li>
+    					<li><a id="dot-14" href="#0" data-date="2013/01/01">EeBria</a></li>
+						<li><a id="dot-15" href="#0" data-date="2014/01/01">Partizan</a></li>
+						<li><a id="dot-16" href="#0" data-date="2015/01/01">Fourpure</a></li>
+    				</ul>
+
+    				<span class="filling-line" aria-hidden="true"></span>
+    			</div> <!-- .events -->
+    		</div> <!-- .events-wrapper -->
+
+    		<ul class="cd-timeline-navigation">
+    			<li><a href="#0" class="prev inactive">Prev</a></li>
+    			<li><a href="#0" class="next">Next</a></li>
+    		</ul> <!-- .cd-timeline-navigation -->
+    	</div> <!-- .timeline -->
+
+    	<div class="events-content">
+    		<ul>
+    			<li class="selected" style="background-color: #246490;" data-date="2000/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec3ddb29d63d6f889bcd/1494608962675/beat-01.jpg" alt="Frederick Sanger2">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Southwark Brewing</h3>
+    						<em class="card-date">Southwark Brewing</em>
+    						<div class="card-story">
+                  46 Druid Street, SE1 3PW<br>
+    Open: Sat 11am-6pm<br>
+    Plus: Tues 7-10pm, Thurs-Fri 5-10pm, Sun 12-5pm<br>
+    <a href="http://southwarkbrewing.co.uk">website</a>
+
+
+    						</div>
+    					</div>
+    				</div>
+    			</li>
+
+    			<li class="card-wrapper" style="background-color: #AAB240;" data-date="2001/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">The Barrel Project</h3>
+    						<em class="card-date">The Barrel Project</em>
+    						<div class="card-story">
+                  80 Druid Street, SE1 2XN<br>
+    Open: Sat 11am-11pm<br>
+    Plus: Weds-Fri 4-11pm, Sun 12-7pm<br>
+    <a href="https://www.thebarrelproject.co.uk">website</a>
     </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #FA803F;" data-date="2002/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Hawkes Cider</h3>
+    						<em class="card-date">Hawkes Cider</em>
+    						<div class="card-story">
+                  92/96 Druid Street, SE1 2HQ<br>
+                  Open: Sat 11am-11pm<br>
+                  Plus: Weds-Fri 4-11pm, Sun 11am-6pm<br>
+                <a href="https://www.wearehawkes.com">website</a>
+                </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #5BACC8;" data-date="2003/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Hiver/All Good Beer</h3>
+    						<em class="card-date">Hiver/All Good Beer</em>
+    						<div class="card-story">
+                  56 Stanworth Street, SE1 3NY<br>
+                  Open: Sat 10am-6pm<br>
+                  Plus: Mon-Fri 9am-5.30pm (Hiver only), Sun 12-4.30pm<br>
+                  <a href="https://www.hiverbeers.com/age-verify/">Hiver website</a>
+                  <a href="https://allgoodbeer.co.uk">All Good Beer website</a>
+
+                </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2004/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Anspach & Hobday</h3>
+    						<em class="card-date">Anspach & Hobday</em>
+    						<div class="card-story">
+                  118 Druid Street, SE1 2HH<br>
+                  Open: Sat 10.30am-10pm<br>
+                  Plus: Fri 5-10pm, Sun 1-6pm<br>
+                  <a href="https://www.anspachandhobday.com">website</a>
+    						</div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #246490;" data-date="2005/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Moor Beer</h3>
+    						<em class="card-date">Moor Beer</em>
+    						<div class="card-story">
+                  71 Enid Street, SE16 3RA<br>
+                  Open: 12-10.30pm<br>
+                  Plus: Weds 4-10pm, Thurs-Fri 3-10.30pm, Sun 12-9pm<br>
+                  <a href="https://www.moorbeer.co.uk">website</a>
+
+    						</div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2006/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">London Calling Sweden</h3>
+    						<em class="card-date">London Calling Sweden</em>
+    						<div class="card-story">
+                  72 Enid Street, SE16 3RA<br>
+                  Open: Sat 12-10.30pm<br>
+                  Plus: Weds-Fri 3-10.30pm, Sun 12-8pm<br>
+                  <a href="https://londoncallingsweden.com">website</a>
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #FA803F;" data-date="2007/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Cloudwater</h3>
+    						<em class="card-date">Cloudwater</em>
+    						<div class="card-story">
+                  73 Enid Street, SE16 3RA<br>
+                  Open: Sat 10am-10pm<br>
+                  Plus: Weds-Fri 3-10pm, Sun 3-10pm<br>
+                  <a href="https://cloudwaterbrew.co/location-enid-st/">website</a>
+
+
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #5BACC8;" data-date="2008/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Brew By Numbers</h3>
+    						<em class="card-date">Brew By Numbers</em>
+    						<div class="card-story">
+                  75/79 Enid Street, SE16 3RA<br>
+                  Open: Sat 11am-8pm<br>
+                  Plus: Fri 5-10pm, Sun 12-6pm<br>
+                  <a href="https://www.brewbynumbers.com">website</a>
+
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2009/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Bianca Road</h3>
+    						<em class="card-date">Bianca Road</em>
+    						<div class="card-story">
+                  83 Enid Street, SE16 3RA<br>
+                  Open: 11am-9pm<br>
+                  Plus: Thurs-Fri 5-10.30pm, Sun 12-6pm<br>
+                  <a href="http://biancaroad.com">website</a>
+                	</div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #246490;" data-date="2010/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">uBrew</h3>
+    						<em class="card-date">uBrew</em>
+    						<div class="card-story">
+                  29-30 Old Jamaica Business Estate<br>
+                  24 Old Jamaica Road, SE16 4AW<Br>
+                  Open: Sat 12-9pm<br>
+                  Plus: Thurs-Fri 12-11pm, Sun 12-7pm<br>
+              <a href="https://ubrew.cc">website</a>
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2011/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Affinity</h3>
+    						<em class="card-date">Affinity</em>
+    						<div class="card-story">
+                  7 Almond Road, SE16 3LR<br>
+                  Open: Sat 12-8.30pm<br>
+                  Plus: Fri 5-8.30pm, Sun 12-6pm<br>
+                <a href="https://www.affinitybrewco.com">website</a>
+
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #FA803F;" data-date="2012/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Spartan</h3>
+    						<em class="card-date">Spartan</em>
+    						<div class="card-story">
+                  8 Almond Road, SE16 3LR<br>
+                  Open: Sat 12-7pm<br>
+                  <a href="https://spartanbrewery.com">website</a>
+              </div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2013/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">EeBria</h3>
+    						<em class="card-date">EeBria</em>
+    						<div class="card-story">
+                  15 Almond Road, SE16 3LR<br>
+                  Open: Sat 11am-8pm<br>
+                  Plus: Fri 5-9pm<br>
+                    <a href="https://www.eebria.com/page/view/taproom">website</a>
+
+                  	</div>
+    					</div>
+    				</div>
+    			</li>
+
+          <li class="card-wrapper" style="background-color: #AAB240;" data-date="2014/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec6420099e801cbe106d/1494608999143/beat-02.png" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Partizan</h3>
+    						<em class="card-date">Partizan</em>
+    						<div class="card-story">
+                  34 Raymouth Road, SE16 2DB<br>
+                  Open: Sat 11am-8pm<br>
+                  Plus: Fri 5-11pm<br>
+                  <a href="http://www.partizanbrewing.co.uk">website</a>
+
+                  </div>
+    					</div>
+    				</div>
+    			</li>
+
+    			<li class="card-wrapper" style="background-color: #246490;" data-date="2015/01/01">
+    				<div class="card-control">
+    					<span class="card-close">x</span>
+    				</div>
+    				<div class="card-content">
+    					<div class="card-image">
+    						<img src="https://static1.squarespace.com/static/58e279af44024364dbb1d2cf/t/5915ec70f7e0ab5cfcba4671/1494609017601/beat-03.jpg" alt="">
+    					</div>
+    					<div class="card-info">
+    						<h3 class="card-title">Fourpure</h3>
+    						<em class="card-date">Fourpure</em>
+    						<div class="card-story">
+                  22 Bermondsey Trading Estate, SE16 3LL<br>
+                  Open: Sat 11am-8pm<br>
+                  Plus: Tues-Thurs 12-8pm, Fri 12-9pm, Sun 12-8pm<br>
+                  <a href="https://www.fourpure.com">website</a>
+                	</div>
+    					</div>
+    				</div>
+    			</li>
+    		</ul>
+    	</div> <!-- .events-content -->
+    </section>
+    <script src="myscripts1.js"></script>
+    </body>
+
+
+
+
+<script src="./scripts/main.js"></script>
+
+
 </body>
 
 </html>
