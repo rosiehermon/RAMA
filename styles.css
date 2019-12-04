@@ -43,7 +43,7 @@ img {
 .about-body{
   margin: 1cm 1cm;
   padding: 40px;
-  background-color: rgb(225, 225, 225);
+  background-color: Gainsboro;
   border-radius: 25px;
 }
 
@@ -125,7 +125,7 @@ timeline++
 #timeline{
   height:.5px;
   width: 205%;
-  background-color: gainsboro;
+  background-color: Gainsboro;
   position:relative;
   top: 60px;
 
