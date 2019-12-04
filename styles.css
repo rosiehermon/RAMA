@@ -40,6 +40,10 @@ img {
   margin-bottom: 5px;
 }
 
+.intro-body{
+  background-color: Gainsboro;
+}
+  
 .about-body{
   margin: 1cm 1cm;
   padding: 40px;
